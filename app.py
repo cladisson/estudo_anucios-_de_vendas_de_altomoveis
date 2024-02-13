@@ -28,7 +28,7 @@ build_histogram = st.checkbox('Criar um histograma')
 
 if build_histogram: # se a caixa de seleção for selecionada
   # escrever uma mensagem
-  st.write('Criando um histograma para a coluna odometer')
+  st.write('Criando um grafico para a coluna odometer')
   
 
   fig = px.scatter(car_data, x="odometer", y="price") # criar um gráfico de dispersão
