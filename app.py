@@ -30,8 +30,8 @@ if build_histogram: # se a caixa de seleção for selecionada
   # escrever uma mensagem
   st.write('Criando um histograma para a coluna odometer')
   
-  # criar um histograma
-  fig = px.histogram(car_data, x="odometer", y="price")
+
+  fig = px.scatter(car_data, x="odometer", y="price") # criar um gráfico de dispersão
      
   # exibir um gráfico Plotly interativo
   st.plotly_chart(fig, use_container_width=True)
