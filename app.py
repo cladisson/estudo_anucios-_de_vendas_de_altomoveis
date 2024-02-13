@@ -3,8 +3,10 @@ import plotly.express as px
 import streamlit as st
     
 car_data = pd.read_csv ("vehicles.csv")
+st.header('Graficos dos Dados de Anucios de vendas')
 
-st.header('vehicles_us')
+
+
 
 hist_button = st.button('Criar histograma') # criar um botão
   
